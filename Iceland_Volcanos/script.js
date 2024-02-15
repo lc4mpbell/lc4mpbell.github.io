@@ -94,3 +94,5 @@ if(document.fullscreenEnabled || document.webkitFullscreenEnabled) {
 		}
 	}
 }
+//zoom controls//
+map.addControl(new mapboxgl.NavigationControl(), "top-right");
