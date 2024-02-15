@@ -4,7 +4,8 @@
   opacity: 1;
   width: 25%;
   height: 100%;
-  padding: 1%;
+  padding: 2%;
+  margin: -1%;
   color: white;
   overflow-y: auto; /* scroll bar on legend */
 }
@@ -56,6 +57,7 @@ b{
   font-weight: 400;
   font-style: normal;
   font-size: 100%;  
+  line-height: 0.1;
 }
 p{
   font-family: "IM Fell DW Pica SC", serif;
@@ -80,7 +82,7 @@ p{
 	padding: 10px 5px;
 }
 
-/* ---acordion collapse--- */
+/* ---Volcano Types info--- */
 
 #tog00,
 #collapse00 {
@@ -174,25 +176,29 @@ p{
 .toggle-fullscreen-btn {
 	position: fixed;
 	z-index: 10000;
-	top: 10px;
-	right: 10px;
+	top: 30%;
+	right: 10%;
 	border: 0;
 	padding: 0;
 	background: none;
 	cursor: pointer;
-	outline: none;
+	outline: #fff;
 }
 
 .toggle-fullscreen-svg {
-	display: block;
-	height: auto;
+  position: fixed;
+	top: 100px;
+	right: 11px;
+	background: #fff;
+	cursor: pointer;
+	outline: #fff;
 }
 
 .toggle-fullscreen-svg path {
 	transform-box: view-box;
-	transform-origin: 12px 12px;
+	transform-origin: 12% 12%;
 	fill: none;
-	stroke: hsl(0, 0%,50%);
+	stroke: #fff;
 	stroke-width: 4;
 	transition: .15s;
 }
