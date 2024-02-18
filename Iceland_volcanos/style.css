@@ -1,0 +1,212 @@
+#features {
+  position: absolute;
+  background: #091423 ;
+  opacity: 1;
+  width: 25%;
+  height: 100%;
+  padding: 2%;
+  margin: -1%;
+  color: white; 
+  overflow-y: auto; /* scroll bar on legend */
+}
+
+label{
+  font-family: "IM Fell DW Pica SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  flex-direction: column;
+  flex-wrap: wrap;
+  line-height: 1;
+  cursor: default;
+}
+
+h1 { 
+  font-family: "IM Fell DW Pica SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 220%;
+  cursor: default;
+}
+h2 {
+  font-family: "IM Fell DW Pica SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100%;
+}
+h3 {
+  font-family: "IM Fell DW Pica SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 150%;
+  text-indent: 10%;
+}
+p {
+  font-family: "IM Fell DW Pica SC", serif;
+  font-weight: 400;
+  font-style: bold;
+  font-height: 200%;
+  cursor: auto;
+}
+a{
+  font-family: "IM Fell DW Pica SC", serif;
+  font-size: 90%; 
+  cursor: help; /* to indicate more information */
+  color: #808080;
+}
+b{
+  font-family: "IM Fell DW Pica SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #808080;
+  font-size: 150%;  
+  line-height: 0.1;
+  cursor: help; /* to indicate more info */
+}
+p{
+  cursor: default;
+  font-family: "IM Fell DW Pica SC", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 150%;  
+}
+
+.acordion .maintitle {
+	display: block;
+	padding: 10px 5px;
+}
+
+/* ---Volcano Types info--- */
+
+#tog00,
+#collapse00 {
+	transition: max-height var(--exp-col-speed) linear;
+	max-height: 0em;
+	overflow: hidden;
+  cursor: default;
+}
+
+#tog00:checked + #collapse00 {
+	max-height: var(--max-height);
+}
+#img0, #img1, #img2,#img3, #img4{
+  position: relative;
+  display: block;
+  max-width: 250px;
+  max-height: 150px; 
+}
+#tog01,
+#collapse01 {
+	transition: max-height var(--exp-col-speed) ease-in-out;
+	max-height: 0em;
+	overflow: hidden;
+}
+
+#tog01:checked + #collapse01 {
+	max-height: var(--max-height);
+}
+#tog02,
+#collapse02 {
+	transition: max-height var(--exp-col-speed) ease-in-out;
+	max-height: 0em;
+	overflow: hidden;
+}
+
+#tog02:checked + #collapse02 {
+	max-height: var(--max-height);
+}
+#tog03,
+#collapse03 {
+	transition: max-height var(--exp-col-speed) ease-in-out;
+	max-height: 0em;
+	overflow: hidden;
+}
+
+#tog03:checked + #collapse03 {
+	max-height: var(--max-height);
+}
+#tog04,
+#collapse04 {
+	transition: max-height var(--exp-col-speed) ease-in-out;
+	max-height: 0em;
+	overflow: hidden;
+}
+
+#tog04:checked + #collapse04 {
+	max-height: var(--max-height);
+}
+#tog05,
+#collapse05 {
+	transition: max-height var(--exp-col-speed) ease-in-out;
+	max-height: 0em;
+	overflow: hidden;
+}
+
+#tog05:checked + #collapse05 {
+	max-height: var(--max-height);
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right:0;
+  width: 75%;
+  height-max: 100%;
+  background: transparent;
+	cursor: default;
+	outline: none;
+}
+.infopopup .mapboxgl-popup-content {
+  flex-wrap: wrap;
+  background: rgba(83, 92, 104, 0.8);
+  border-top: 5% black;
+  padding: 5%;
+  font-size: 120%;
+  color: white;
+}
+.my-name .mapboxgl-popup-content {
+  background: rgba(83, 92, 104, 0.8);
+  border-top: 5%;
+  border-bottom: 50%;
+  padding: 5%;
+  margin: -15%;
+  display: flex;
+  color: white;
+}
+.toggle-fullscreen-btn {
+	position: fixed;
+	z-index: 10000;
+	top: 30%;
+	right: 10%;
+	border: 0;
+	padding: 0;
+	background: #fff;
+	cursor: pointer;
+	outline: #fff;
+}
+
+.toggle-fullscreen-svg {
+  position: fixed;
+	top: 100px;
+	right: 11px;
+	background: white;
+  border-radius: 3px;
+	cursor: pointer;
+	outline: #fff;
+}
+
+.toggle-fullscreen-svg path {
+	transform-box: view-box;
+	transform-origin: 12% 12%;
+	fill: none;
+	stroke: #808080;
+	stroke-width: 4;
+	transition: .15s;
+}
+
+.toggle-fullscreen-btn:not(.on) .icon-fullscreen-leave {
+	display: none;
+}
+
+.toggle-fullscreen-btn.on .icon-fullscreen-enter {
+	display: none;
+}
